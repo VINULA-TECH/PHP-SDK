@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'vinupay/payment',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '19532481c72ad95b8d29ebd1ab640f8b8733a04f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -503,9 +503,9 @@
             'dev_requirement' => true,
         ),
         'vinupay/payment' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '19532481c72ad95b8d29ebd1ab640f8b8733a04f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

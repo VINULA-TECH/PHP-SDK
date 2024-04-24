@@ -3,7 +3,6 @@
     "description": "payment transactions",
     "type": "library",
     "require": {
-        "symfony/debug": "^4.4",
         "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
