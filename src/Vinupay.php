@@ -61,6 +61,17 @@ class Payment{
      $resp1 = json_decode($response->getBody()->getContents(), true);
      return $resp1;
    }
+
+   public function getTransactionStatus($extTransactionId) {
+     $client = new \GuzzleHttp\Client();
+     $body['sid'] = $this->sid;
+     $body['extTransactionId'] = $extTransactionId;
+
+     $response = $client->request('POST', 'https://merchant.vinupay.com/transactionStatus', ['headers' => ['content-type'   => "application/json"] ,'body' => json_encode($body)]);
+
+     $resp1 = json_decode($response->getBody()->getContents(), true);
+     return $resp1;
+   }
 }
 
 ?>
