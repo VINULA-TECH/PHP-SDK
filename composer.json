@@ -19,5 +19,6 @@
             "name": "Durgarao R",
             "email": "raod1989r@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }
