@@ -43,11 +43,10 @@ class Payment{
      $verifyVPATransferResponse = $client1->request('POST', 'https://merchant.vinupay.com/verifyTransferRequest', ['headers' => ['content-type'   => "application/json"] ,'body' => json_encode($body)]);
 
      $resp1 = json_decode($verifyVPATransferResponse->getBody()->getContents(), true);
-     print_r($transaction);
      return $resp1;
    }
 
-   public function generateQRString($customerEmail, $customerPhone, $amount) {
+   public function generateQRString($customerEmail, $customerPhone, $customerName, $amount) {
      $client = new \GuzzleHttp\Client();
      $body['customerEmail'] = $customerEmail;
      $body['customerPhone'] = $customerPhone;
